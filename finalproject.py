@@ -105,3 +105,4 @@ ay = sorted(a, key=lambda x: x[1])
 p1, p2, mi = dvc(ax, ay)
 print('\n')
 print(p1, p2, mi)
+'test'
