@@ -1,9 +1,16 @@
 from IPython.display import clear_output
 
 board = ['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a']
-print board[0], board[1], board[2]
-print board[3], board[4], board[5]
-print board[6], board[7], board[8]
+
+
+def printboard():
+    print
+    board[0], board[1], board[2]
+    print
+    board[3], board[4], board[5]
+    print
+    board[6], board[7], board[8]
+
 marker = 'x'
 index = -1
 while True:
@@ -45,8 +52,5 @@ while True:
             break
         board[n] = marker
         index = index * -1
-
-        print board[0], board[1], board[2]
-        print board[3], board[4], board[5]
-        print board[6], board[7], board[8]
+        printboard()
 print 'good'
